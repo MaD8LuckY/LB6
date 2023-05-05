@@ -1,0 +1,12 @@
+---
+- hosts: yyy
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    student
+  remote_user:
+    student
+  roles:
+    - nginx
